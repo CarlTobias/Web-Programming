@@ -1,0 +1,34 @@
+body{
+    background-color: #43638C;
+}
+
+h1{
+    background-color: #D9B97E;
+    text-align: center;
+}
+
+h2{
+    text-align: justify;
+}
+
+h3{
+    text-align: center;
+}
+
+pre{
+    text-align: justify;
+}
+.img-chris{
+    width: 500px;
+    height: 667px;
+}
+
+.img-brad{
+    width: 540px;
+    height: 675px;
+}
+
+.img-charles{
+    width: 552px;
+    height: 824px;
+}
