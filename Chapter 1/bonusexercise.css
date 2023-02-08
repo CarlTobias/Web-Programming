@@ -13,19 +13,37 @@ pre{
     text-align: start;
     /*and this changes the font size*/
     font-size: 16px;
+    /*and the margin code helps with the positioning of the border itself on the page*/
+    margin: 25px auto;
 }
 
 /*this modifies the contents within the <h1> tag*/
 h1{
     /*this changes the color of the background inside the h1 tag only rather than the whole page*/
     background-color: #D9B97E;
+    /*these two change just the top and bottom style of the border*/
+    border-top-style: double;
+    border-bottom-style: double;
     /*this changes the font of the text... i chose this one to make it stand out*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    /*this deals with the border size to make it so that it does not take up any unnecessary space*/
+    box-sizing: border-box;
+    /*this works with box-sizing to determine the amount of space*/
+    width: 25%;
+    /*padding gives extra space between the border edges and text*/
+    padding: 5px;
+    margin: auto;
 }
 
 /*this modifies the contents within the <h2> tag*/
 h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*this modifies the contents of a tag with a specific class within a tag*/
+.lol{
     /*this changes the color of the background inside the border of the h2 tag only*/
     background: linear-gradient(90deg, #8DC0F0, #D287E6) padding-box;
     /*this changes the thickness of the outline of the order*/
@@ -34,21 +52,20 @@ h2{
     border-style: solid;
     /*this adjusts the roundness of the corners of the border*/
     border-radius: 10px;
-    text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/*this modifies the contents of a tag with a specific class within a tag*/
-.lol{
-    /*this helps the program know how to treat a block*/
-    display: flex;
+    box-sizing: border-box;
+    width: 25%;
+    margin: auto;
+    margin-left: 100px;
     /*this sets items (whether its forced onto one or multiple lines*/
     flex-wrap: wrap;
     /*this sets the gaps between rows and columns*/
     gap: 1rem;
     /*this creates space within a content's elements*/
     padding: 0.5rem;
+    text-align: center;
 }
+
+
 
 /*this modifies the contents within the <h3> tag*/
 h3{
@@ -62,6 +79,34 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+.thinKINGS{
+    background: #8BD996 padding-box;
+    border-width: 3px;
+    border-style: dotted;
+    box-sizing: border-box;
+    width: 25%;
+    margin: 25px auto;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+.hotness{
+    border-width: 3px;
+    border-style: none;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 25px auto;
+    margin-left: 80px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+    text-align: justify;
+}
+
 
 /*the following .img blocks help in modifying the image*/
 .img-chris{
