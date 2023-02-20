@@ -13,7 +13,7 @@ h2{
     text-align: center;
 }
 
-h4{
+#author{
     font-size: 1.1rem;
     text-align: center;
     /* this changes the font of the said tag */
@@ -31,4 +31,6 @@ body{
     background-color: aliceblue;
     /* this determines the font family of the text within the tag */
     font-family: Georgia, serif;
+    padding-left: 20px;
+    padding-right: 20px;
 }
