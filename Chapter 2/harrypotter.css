@@ -1,0 +1,54 @@
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    color: #0e1a40;
+    text-align: center;
+}
+
+#headers{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #740001;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#titles{
+    font-family: 'Gloock', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a472a;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    color: #372e29;
+
+    padding-right: 35px;
+    background-color: #726255;
+}
+
+#qckfnd{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#center{
+    text-align: center;
+}
+
+#casthead{
+    font-weight: bold;
+    color: #1a472a;
+
+    padding-bottom: 15px;
+}
