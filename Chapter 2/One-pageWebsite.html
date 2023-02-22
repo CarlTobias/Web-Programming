@@ -8,32 +8,49 @@
         - One link styled as a button.
 -->
 
+<!--i started with the usual tags needed like <!DOCTYPE>, <html>, <head>, and <body>-->
 <!DOCTYPE html>
 
 <html>
 
     <head>
+        <!--inside the <head> tag, i input the title for the page and certain links-->
         <title>Harry Potter</title>
-        
+
+        <!--the first 5 links are used to import fonts from googlefonts.com-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <!--and this is the usual link tag used to connect the css file-->
         <link rel="stylesheet" href="harrypotter.css">
     </head>
 
     <body>
+        <!--inside the <body> tag, we have the header for the main title;-->
         <h1>The Wizarding World</h1>
         
-        <p class="search">
-            <a id="qckfnd">Quick Find:</a> <a href="#overview">Overview</a> | <a href="#plot">Plot</a> | <a href="#caNcha">Cast and Characters</a> | <a href="#reviews">Movie Reviews</a>
+        <!--the navigation bar for easy looking (in here, i classified <p> as "nav"...)-->
+        <p class="nav">
+            <!--
+                i input an id for the "Quick Find" text to make changes to the text in css
+                and i used anchor <a> tags to add links to text so that it will direct the user to that certain point on the page when clicked
+                (the links are connected to IDs, seen later)
+            -->
+            <a id="qckfnd">Quick Find:</a> <a href="#overview">Overview</a> | <a href="#plot">Plot</a> | <a href="#caNcha">Cast and Characters</a> | <a href="#reviews">Movie Reviews</a> | <a href="#references">References</a>
         </p>
 
+        <!--this here is the second paragraph <p> tag which holds all sections that can be found in the Nav Bar-->
         <p>
             <br><br>
+            <!--
+                in here, we have the first main section called "Overview"
+                (as seen, i used the unordered list <ul> tag to properly id the section)
+            -->
             <ul id="overview">
                 <p>
+                    <!--i used div for the top text to identify it as a header, to make it identical to other headers on the page-->
                     <div id="headers">Overview</div>
 
                     The first book introduces readers to Harry Potter, an 11 year old boy that lives in the world of non-magical beings, 
@@ -79,11 +96,14 @@
             </ul>
 
 
-
+            <!--we have the next section here, the "Plot"-->
             <ul  id="plot">
+
                 <p>
+                    <!--again, this is DIVided from the rest of the paragraph <p> tag to make it in line with other headers-->
                     <div id="headers">Plot</div>
 
+                    <!--what i did here is similar to the headers, but this will be seen only on the titles of the books and movies-->
                     <div id="titles">Book One: The Sorcerer's Stone</div>
 
                     When mysterious letters start arriving on his doorstep, Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry.
@@ -201,126 +221,128 @@
                 </p>
             </ul>
 
+            <!--next, we have the "Cast and Characters" section-->
             <ul id="caNcha">
-                <div id="body">
-                    <div id="headers">Cast and Characters</div>
+                <div id="headers">Cast and Characters</div>
 
-                    Here you will see all the cast and characters in the movies.<br>
-                    They have been sorted into 5 categories and are <strong>NOT</strong> repeated throughout.
-                    <br><br>
+                Here you will see all the cast and characters in the movies.<br>
+                <!--and since i only need specific text bolded here...-->
+                They have been sorted into 5 categories and are <strong>NOT</strong> repeated throughout.
+                <br><br>
 
-                    P.S. I might not have missed some because the cast is quite big.
-                    <br><br><br>
+                P.S. I might not have missed some because the cast is quite big.
+                <br><br><br>
 
-                    <strong>Layout: "Character Name - Cast Name"</strong>
-                    <br><br>
+                <!--... and here, i used the bold <strong> tag-->
+                <strong>Layout: "Character Name - Cast Name"</strong>
+                <br><br>
+
+                <!--in here i also used another type of header, used for separating character categories-->
+                <a id="casthead">Students:</a>
+                <br>
+                Bill Weasley - Richard Fish <br>
+                Blaise Zabini - Louis Cordice <br>
+                Cedric Diggory - Robert Pattinson <br>
+                Charlie Weasley - Alex Crockford <br>
+                Dean Thomas - Alfred Enoch <br>
+                Draco Malfoy - Tom Felton <br>
+                Fred Weasley - James Phelps <br>
+                George Weasley - Oliver Phelps <br>
+                Gregory Goyle - Josh Herdman <br>
+                Harry Potter - Daniel Radcliffe <br>
+                Neville Longbottom - Matthew Lewis <br>
+                Ron Weasley - Rupert Grint <br>
+                Vincent Crabbe - Jamie Waylett <br>
+                Ginny Weasley - Bonnie Wright <br>
+                Hermoine Granger - Emma Watson <br>
+                Luna Lovegood - Evanna Lynch <br>
+                <br><br><br>
 
 
-                    <a id="casthead">Students:</a>
-                    <br>
-                    Bill Weasley - Richard Fish <br>
-                    Blaise Zabini - Louis Cordice <br>
-                    Cedric Diggory - Robert Pattinson <br>
-                    Charlie Weasley - Alex Crockford <br>
-                    Dean Thomas - Alfred Enoch <br>
-                    Draco Malfoy - Tom Felton <br>
-                    Fred Weasley - James Phelps <br>
-                    George Weasley - Oliver Phelps <br>
-                    Gregory Goyle - Josh Herdman <br>
-                    Harry Potter - Daniel Radcliffe <br>
-                    Neville Longbottom - Matthew Lewis <br>
-                    Ron Weasley - Rupert Grint <br>
-                    Vincent Crabbe - Jamie Waylett <br>
-                    Ginny Weasley - Bonnie Wright <br>
-                    Hermoine Granger - Emma Watson <br>
-                    Luna Lovegood - Evanna Lynch <br>
-                    <br><br><br>
 
-
-
-                    <a id="casthead">Professors:</a>
-                    <br>
-                    Amycus Carrow - Ralph Ineson <br>
-                    Alastor Moody - Brendan Gleeson <br>
-                    Albus Dumbledore - Richard Harris, Michael Gambon <br>
-                    Flitwick - Warwick Davis <br>
-                    Gilderoy Lockhart - Kenneth Branagh <br>
-                    Quirinus Quirrell - Ian Hart <br>
-                    Remus Lupin - David Thewlis <br>
-                    Rubeus Hagrid - Robbie Coltrane <br>
-                    Severus Snape - Alan Rickman <br>
-                    Minerva McGonagall - Maggie Smith <br>
-                    Patrcia (or Sibyll) Trelawney - Emma Thompson <br><br>
+                <a id="casthead">Professors:</a>
+                <br>
+                Amycus Carrow - Ralph Ineson <br>
+                Alastor Moody - Brendan Gleeson <br>
+                Albus Dumbledore - Richard Harris, Michael Gambon <br>
+                Flitwick - Warwick Davis <br>
+                Gilderoy Lockhart - Kenneth Branagh <br>
+                Quirinus Quirrell - Ian Hart <br>
+                Remus Lupin - David Thewlis <br>
+                Rubeus Hagrid - Robbie Coltrane <br>
+                Severus Snape - Alan Rickman <br>
+                Minerva McGonagall - Maggie Smith <br>
+                Patrcia (or Sibyll) Trelawney - Emma Thompson <br><br>
                     
-                    Dolores Umbridge - Imelda Staunton <br>
-                    <br><br><br>
-                    
-                    
-                    
-
-                    <a id="casthead">Order of the Phoenix Members:</a>
-                    <br>
-                    Aberforth Dumbledore - Jim McManus, Ciaran Hinds <br>
-                    Arthur Weasley - Mark Williams <br>
-                    Benjy Fenwick - (did not appear in the movies) <br>
-                    Caradoc Dearborn - (did not appear in the movies) <br>
-                    Dedalus Diggle - David Brett <br>
-                    Edgar Bones - Cliff Lanning <br>
-                    Elphias Doge - Peter Cartwright <br>
-                    Fabian and Gideon Prewett - (played by the twins who play Fred and George) <br>
-                    James Potter - Adrian Rawlins, Robbie Jarvis, Alfie McIlwain <br>
-                    Kingsley Shacklebolt - George Harris <br>
-                    Mundungus Fletcher - Andy Linden <br>
-                    Sirius Black - Gary Oldman <br>
-                    Sturgis Podmore - (did not appear in the movies) <br>
-                    Dorcas Meadowes - (did not appear in the movies) <br>
-                    Emmeline Vance - Drigitte Millar <br>
-                    Fleur Delacour - Clemence Poesy <br>
-                    Hestia Jones - (did not appear in the movies) <br>
-                    Lily Potter - Geraldine Somerville, Ellie Darcey-Alden, Susie Shinner <br>
-                    Marlene McKinnon - (did not appear in the movies) <br>
-                    Mrs. Molly Weasely - Julie Walters <br>
-                    Nymphadora Tonks - Natalia Tena <br>
-                    <br><br><br>
+                Dolores Umbridge - Imelda Staunton <br>
+                <br><br><br>
                     
                     
                     
-                    <a id="casthead">Death Eaters:</a>
-                    <br>
-                    Lord Voldemort - Ralph Fiennes <br><br>
 
-                    Bartemus Crouch Jr. - David Tennant <br>
-                    Corban Yaxley - Peter Mullan <br>
-                    Igor Karkaroff - Predrag Bjelac <br>
-                    Lucius Malfoy - Jason Isaacs <br>
-                    Peter Pettigrew (Wormtail) - Timothy Spall <br>                  
-                    Bellatrix Lestrange - Helena Bonham Carter <br>
-                    <br><br><br>
+                <a id="casthead">Order of the Phoenix Members:</a>
+                <br>
+                Aberforth Dumbledore - Jim McManus, Ciaran Hinds <br>
+                Arthur Weasley - Mark Williams <br>
+                Benjy Fenwick - (did not appear in the movies) <br>
+                Caradoc Dearborn - (did not appear in the movies) <br>
+                Dedalus Diggle - David Brett <br>
+                Edgar Bones - Cliff Lanning <br>
+                Elphias Doge - Peter Cartwright <br>
+                Fabian and Gideon Prewett - (played by the twins who play Fred and George) <br>
+                James Potter - Adrian Rawlins, Robbie Jarvis, Alfie McIlwain <br>
+                Kingsley Shacklebolt - George Harris <br>
+                Mundungus Fletcher - Andy Linden <br>
+                Sirius Black - Gary Oldman <br>
+                Sturgis Podmore - (did not appear in the movies) <br>
+                Dorcas Meadowes - (did not appear in the movies) <br>
+                Emmeline Vance - Drigitte Millar <br>
+                Fleur Delacour - Clemence Poesy <br>
+                Hestia Jones - (did not appear in the movies) <br>
+                Lily Potter - Geraldine Somerville, Ellie Darcey-Alden, Susie Shinner <br>
+                Marlene McKinnon - (did not appear in the movies) <br>
+                Mrs. Molly Weasely - Julie Walters <br>
+                Nymphadora Tonks - Natalia Tena <br>
+                <br><br><br>
+                    
+                    
+                    
+                <a id="casthead">Death Eaters:</a>
+                <br>
+                Lord Voldemort - Ralph Fiennes <br><br>
+
+                Bartemus Crouch Jr. - David Tennant <br>
+                Corban Yaxley - Peter Mullan <br>
+                Igor Karkaroff - Predrag Bjelac <br>
+                Lucius Malfoy - Jason Isaacs <br>
+                Peter Pettigrew (Wormtail) - Timothy Spall <br>                  
+                Bellatrix Lestrange - Helena Bonham Carter <br>
+                <br><br><br>
 
 
 
-                    <a id="casthead">Others:</a>
-                    <br>
-                    Dudley Dursley - Harry Melling <br>
-                    Vernon Dursley - Richard Griffiths <br>
-                    Petunia Dursley - Fiona Shaw <br><br>
+                <a id="casthead">Muggles, Ghosts, and Elves:</a>
+                <br>
+                Dudley Dursley - Harry Melling <br>
+                Vernon Dursley - Richard Griffiths <br>
+                Petunia Dursley - Fiona Shaw <br><br>
 
-                    Bloody Baron - Terence Bayler <br>
-                    Nearly Headless Nick - John Cleese <br>
-                    Fat Friar - Simon Fisher-Becker <br>
-                    Grey Lady - Nina Young <br>
-                    Moaning Myrtle - Shirley Henderson <br><br>
+                Bloody Baron - Terence Bayler <br>
+                Nearly Headless Nick - John Cleese <br>
+                Fat Friar - Simon Fisher-Becker <br>
+                Grey Lady - Nina Young <br>
+                Moaning Myrtle - Shirley Henderson <br><br>
 
-                    Dobby - Toby Jones <br>
-                    Kreacher - Timothy Bateson, Simon McBurney <br>
-                    Winky - (did not appear in the movies)
-                </div>
+                Dobby - Toby Jones <br>
+                Kreacher - Timothy Bateson, Simon McBurney <br>
+                Winky - (did not appear in the movies)
             </ul>
 
+            <!--and the second to last section here, "Movie Reviews"-->
             <ul id="reviews">
-
                 <div id="headers">Movie Reviews</div>
 
+                <!--i added a link here for users to check the website where the reviews are from-->
                 The ratings for the movies are based on results from <a href="https://www.rottentomatoes.com/search?search=harry%20potter">Rotten Tomatoes</a>.
                 <br><br>
 
@@ -328,41 +350,90 @@
                 <strong>Tomatometer:</strong> 81%
                 <strong>Audience Score:</strong> 82%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Harry Potter and the Sorcerer's Stone adapts its source material faithfully while condensing the novel's overstuffed narrative 
+                into an involving -- and often downright exciting -- big-screen magical caper.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Chamber of Secrets</div>
                 <strong>Tomatometer:</strong> 82%
                 <strong>Audience Score:</strong> 80%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Though perhaps more enchanting for younger audiences, Chamber of Secrets is nevertheless both darker and livelier than its 
+                predecessor, expanding and improving upon the first film's universe.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Prisoner of Azkaban</div>
                 <strong>Tomatometer:</strong> 90%
                 <strong>Audience Score:</strong> 86%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Under the assured direction of Alfonso Cuaron, Harry Potter and the Prisoner of Azkaban triumphantly strikes a delicate balance 
+                between technical wizardry and complex storytelling.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Goblet of Fire</div>
                 <strong>Tomatometer:</strong> 88%
                 <strong>Audience Score:</strong> 74%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                The main characters are maturing, and the filmmakers are likewise improving on their craft; vibrant special effects and assured 
+                performances add up to what is the most complex yet of the Harry Potter films.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Order of the Phoenix</div>
                 <strong>Tomatometer:</strong> 78%
                 <strong>Audience Score:</strong> 81%
-                <br>
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                It's not easy to take the longest Harry Potter book and streamline it into the shortest HP movie, but director David Yates does a 
+                bang up job of it, creating an Order of the Phoenix that's entertaining and action-packed.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Half-Blood Prince</div>
                 <strong>Tomatometer:</strong> 84%
                 <strong>Audience Score:</strong> 78%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Dark, thrilling, and occasionally quite funny, Harry Potter and the Half-Blood Prince is also visually stunning and emotionally 
+                satisfying.
+                <br><br>
+
 
                 <div id="titles">Harry Potter and the Deathly Hallows: Part 1</div>
                 <strong>Tomatometer:</strong> 77%
                 <strong>Audience Score:</strong> 85%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                It can't help but feel like the prelude it is, but Deathly Hallows: Part I is a beautifully filmed, emotionally satisfying 
+                penultimate installment for the Harry Potter series.
+                <br><br>
 
+                
                 <div id="titles">Harry Potter and the Deathly Hallows: Part 2</div>
                 <strong>Tomatometer:</strong> 96%
                 <strong>Audience Score:</strong> 89%
                 <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Thrilling, powerfully acted, and visually dazzling, Deathly Hallows Part II brings the Harry Potter franchise to a 
+                satisfying -- and suitably magical -- conclusion.
+                <br><br>
+            </ul>
+
+            <!--finally, we also have "References" for the websites i used for information-->
+            <ul id="references">
+                <div id="headers">References</div>
+
+                <a id="casthead">Overview Descriptions:</a> <a href="https://www.teach-nology.com/teachers/child_lit/harry_potter/">www.teach-nology.com</a> <br>
+                <a id="casthead">Plot Descriptions:</a> <a href="https://stories.jkrowling.com/en-us/harrypotter/the-harry-potter-stories/">stories.jkrowling.com</a> <br>
+                <a id="casthead">Cast and Character List:</a> <a href="https://harrypotter.fandom.com/wiki/List_of_Harry_Potter_cast_members">harrypotter.fandom.com</a> <br>
+                <a id="casthead">Movie Reviews:</a> <a href="https://www.rottentomatoes.com/search?search=harry%20potter">www.rottentomatoes.com</a>
             </ul>
         </p>
     </body>

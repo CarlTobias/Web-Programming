@@ -1,22 +1,25 @@
 h1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 64px;
-    color: #0e1a40;
-    text-align: center;
+    /*here we have the contents of the modifications for h1*/
+    font-family: 'Bebas Neue', cursive; /*i used an imported font here (from googlefonts) and i activate it using "font-family"*/
+    font-size: 64px; /*i changed the font size using "font-size;"*/
+    color: #0e1a40; /*the color using "color;"*/
+    text-align: center; /*and the alignment of the text using "text-align"*/
 }
 
 #headers{
+    /*here we have the "header" id style changes*/
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: lighter; /*this one changes the weight, whether its light, lighter, bold, bolder, or custom*/
     color: #740001;
 
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 30px; /*this one gives extra space on top of the text (specifically 30px);*/
+    padding-bottom: 10px; /*and this for the bottom (specifically 10px)*/
 }
 
 #titles{
-    font-family: 'Gloock', serif;
+    /*these are for the ones marked with the "titles" id*/
+    font-family: 'Gloock', serif; /*a different font is used here (again, from googlefonts)*/
     font-size: 20px;
     font-weight: bold;
     color: #1a472a;
@@ -26,35 +29,38 @@ h1{
 }
 
 body{
+    /*these ones modify the all the text inside the body <body> tag, exceot those that are given specific tags, IDs, and classes*/
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    text-align: justify;
+    text-align: justify; /*the alignment here means the text will be uniform end-to-end*/
     color: #372e29;
 
-    padding-right: 35px;
-    background-color: #726255;
+    padding: 35px;
+    background-color: #726255; /*and this changes the color for the whole page*/
 }
 
 #qckfnd{
+    /*similar basic commands here for this id*/
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
 }
 
-.search{
+.nav{
+    /*i used class here instead of id to make it more distinct from the others*/
     text-align: center;
-    
-    background-color: #5d5d5d;
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 40%;
+    /*i set a border here*/
+    background-color: #5d5d5d; /*it has a different background color (but only within the border*/
+    box-sizing: border-box; /*this allows padding  to be included to the total area of the border*/
+    border-radius: 5px; /*this adjusts the roundness of the corners*/
+    width: fit-content; /*this allows the border to not go from end-to-end, but instead to only a specific area (lengthwise)*/
     padding: 0.5rem;
-    margin: auto;
-    /*find a way to make it centered like you did before in chapter 1*/
+    margin: auto; /*and this allows the whole thing to be centered*/
 }
 
 #casthead{
+    /*once again, we have similar basic properties for this id named "casthead"*/
     font-weight: bold;
     color: #1a472a;
 
